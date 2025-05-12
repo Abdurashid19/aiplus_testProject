@@ -1,17 +1,18 @@
-# ai_plus_project
+# ai_plus_project to-Do App
+Простое Flutter-приложение для списка задач с фильтрацией и сохранением
 
-A new Flutter project.
+## Стек
+- Flutter  
+- provider  
+- shared_preferences  
 
-## Getting Started
+## Управление состоянием
+- provider + ChangeNotifier 
+- `TaskProvider` хранит список и методы (`addTask`, `toggleTask`, `removeTask`, `setFilter`)  
+- При изменениях — `notifyListeners()`, UI подписывается через `context.watch`  
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# aiplus_testProject
+## Библиотеки
+- provider: ^6.1.5 
+- shared_preferences: ^2.5.3
+- dart:convert
+- flutter/material  
